@@ -14,6 +14,10 @@
 		353C8B8019DDC00C00F2D75B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353C8B7F19DDC00C00F2D75B /* Images.xcassets */; };
 		353C8B8319DDC00C00F2D75B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 353C8B8119DDC00C00F2D75B /* LaunchScreen.xib */; };
 		353C8B8F19DDC00D00F2D75B /* HundevurderingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C8B8E19DDC00D00F2D75B /* HundevurderingTests.swift */; };
+		353C8B9C19DEDA0000F2D75B /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C8B9B19DEDA0000F2D75B /* AddDogViewController.swift */; };
+		353C8BA019DEDEFF00F2D75B /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C8B9F19DEDEFF00F2D75B /* DismissSegue.swift */; };
+		353C8BA219DEE06100F2D75B /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C8BA119DEE06100F2D75B /* Dog.swift */; };
+		353C8BA419DEE1D900F2D75B /* DogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C8BA319DEE1D900F2D75B /* DogStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		353C8B8819DDC00D00F2D75B /* HundevurderingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HundevurderingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		353C8B8D19DDC00D00F2D75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		353C8B8E19DDC00D00F2D75B /* HundevurderingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HundevurderingTests.swift; sourceTree = "<group>"; };
+		353C8B9B19DEDA0000F2D75B /* AddDogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDogViewController.swift; sourceTree = "<group>"; };
+		353C8B9F19DEDEFF00F2D75B /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		353C8BA119DEE06100F2D75B /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		353C8BA319DEE1D900F2D75B /* DogStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 				353C8B7819DDC00C00F2D75B /* MasterViewController.swift */,
 				353C8B7A19DDC00C00F2D75B /* DetailViewController.swift */,
 				353C8B7C19DDC00C00F2D75B /* Main.storyboard */,
+				353C8BA119DEE06100F2D75B /* Dog.swift */,
+				353C8BA319DEE1D900F2D75B /* DogStore.swift */,
+				353C8B9F19DEDEFF00F2D75B /* DismissSegue.swift */,
+				353C8B9B19DEDA0000F2D75B /* AddDogViewController.swift */,
 				353C8B7F19DDC00C00F2D75B /* Images.xcassets */,
 				353C8B8119DDC00C00F2D75B /* LaunchScreen.xib */,
 				353C8B7419DDC00C00F2D75B /* Supporting Files */,
@@ -216,8 +228,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				353C8B7B19DDC00C00F2D75B /* DetailViewController.swift in Sources */,
+				353C8BA019DEDEFF00F2D75B /* DismissSegue.swift in Sources */,
+				353C8BA219DEE06100F2D75B /* Dog.swift in Sources */,
 				353C8B7919DDC00C00F2D75B /* MasterViewController.swift in Sources */,
+				353C8BA419DEE1D900F2D75B /* DogStore.swift in Sources */,
 				353C8B7719DDC00C00F2D75B /* AppDelegate.swift in Sources */,
+				353C8B9C19DEDA0000F2D75B /* AddDogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Hundevurdering/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Hundevurdering/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
