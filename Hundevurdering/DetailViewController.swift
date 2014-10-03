@@ -10,9 +10,6 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
     var detailItem: Dog? {
         didSet {
             // Update the view.
@@ -20,12 +17,15 @@ class DetailViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var detailDescriptionLabel: UITextView!
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: Dog = self.detailItem {
             if let label = self.detailDescriptionLabel {
                 label.text = detail.name
             }
+            self.navigationItem.title = detail.name
         }
     }
 
